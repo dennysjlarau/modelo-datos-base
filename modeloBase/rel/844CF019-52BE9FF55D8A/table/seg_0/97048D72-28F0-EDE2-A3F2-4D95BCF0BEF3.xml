@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="97048D72-28F0-EDE2-A3F2-4D95BCF0BEF3" name="catalogos">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[almacena información de catálogos generales que utiliza la aplicaicón y formularios web]]></commentInRDBMS>
+<generatorID>0BC2B192-C89F-2D84-5E7C-97F23688909D</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="identificador" id="09CEA71A-1AF5-03CB-3AFF-A04A2429E27B">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[clave principal del catálogo]]></commentInRDBMS>
+<generatorID>B9292D15-4745-7015-6C94-C9705C76B1B1</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_padre" id="448AB2C2-4BD3-FC10-1736-38EDE23FD801">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[identifica el padre de la misma tabla como recursivo]]></commentInRDBMS>
+<generatorID>F104E4BF-40F7-499D-5E91-2E47C97FE4BF</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4CE207DD-B347-55AA-D119-A66EC30FFE0F" referredColumn="09CEA71A-1AF5-03CB-3AFF-A04A2429E27B"/>
+</associations>
+</Column>
+<Column name="tipo" id="266D16F2-E3BF-A6D9-B5AE-3EA7BC44F34F">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[tipo del catalogo que permite agrupar o tipificar un catalogo]]></commentInRDBMS>
+<generatorID>03664995-5217-5F96-9A01-9DEB74B2866A</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor" id="0E2BF350-8481-D10B-E16D-F862361C6D6E">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[valor del catalog]]></commentInRDBMS>
+<generatorID>C3858C71-EA8C-04A4-AFD1-DA0D5FBC355E</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="C71261DA-857B-CA28-326C-6EC2EB65F38C">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[descripción del catalogo]]></commentInRDBMS>
+<generatorID>24EE0285-A8BD-625B-8A1E-0A96DC36F858</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="FE6ED85E-DFA2-05FD-88B7-A6D979003CB3">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[estado del catalogo (0 eliminado, 1 activo, 2 inactivo)]]></commentInRDBMS>
+<generatorID>9B4A5AEC-BEC3-32A8-454A-907297B867B0</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7668E6AF-3F09-5004-0A5C-845F64685D78" name="catalogos_PK">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<generatorID>D428614C-F9E7-11EB-5B06-6DD50B428510</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09CEA71A-1AF5-03CB-3AFF-A04A2429E27B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66BF0909-CEEA-F468-7C4C-05347CEB4960" name="catalogos_catalogos_FK">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:23 UTC</createdTime>
+<generatorID>D428614C-F9E7-11EB-5B06-6DD50B428510</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="448AB2C2-4BD3-FC10-1736-38EDE23FD801"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

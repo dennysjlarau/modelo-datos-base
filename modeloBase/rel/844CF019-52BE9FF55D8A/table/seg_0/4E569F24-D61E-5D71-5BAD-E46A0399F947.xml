@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E569F24-D61E-5D71-5BAD-E46A0399F947" name="parametros">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[parámetros generales para la aplicación]]></commentInRDBMS>
+<generatorID>BF9B11B8-3561-44B5-F7B0-6CC1F4528527</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="identificador" id="30398F65-C292-154E-4372-EF08F901B519">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[clave principal que identifica el registro del parámetro]]></commentInRDBMS>
+<generatorID>708D03DC-345B-BA4F-E8CC-57BADC29D290</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="9CAE9298-C7E0-5C41-F0D3-5C8064AF5F6C">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[nombre del parámetro]]></commentInRDBMS>
+<generatorID>F1118734-2118-EE0E-B047-41B585FE0EB4</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_cadena" id="72E21C96-DE02-F100-7986-A29CEE1BC15E">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[valor alfa numerico del parámetro]]></commentInRDBMS>
+<generatorID>1BC9E1E2-90F8-06D3-F023-01DE06E17A77</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="3197E6E8-B395-7039-7B75-4B34F7008FED">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[descripción del parámetro]]></commentInRDBMS>
+<generatorID>D20336D9-4E8A-A438-396D-B4DF5A410276</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="C9625660-F895-DA72-D580-620081BC54F4">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[estado del parametro 0 eliminado, 1 activo, 2 inactivo]]></commentInRDBMS>
+<generatorID>AFB4DD22-F5CA-03B0-3CC2-D9E17AD31B07</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B5F12EFB-0E30-986B-8263-08652A8FEF0B" name="parametros_PK">
+<createdBy>denny</createdBy>
+<createdTime>2021-05-02 21:57:03 UTC</createdTime>
+<generatorID>23DDCB7A-ACF9-D9DA-5084-A109D52124A1</generatorID>
+<ownerDesignName>modeloBase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30398F65-C292-154E-4372-EF08F901B519"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
